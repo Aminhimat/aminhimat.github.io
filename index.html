@@ -1,181 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Personal Webpage</title>
-    <link rel="stylesheet" type="text/css" href="noor.css">
-</head>
-<body>
-<style>
-body {
-    font:normal 12px/1.6em Arial, Helvetica, sans-serif;
-	color:black;
-	background:black;
+<style type="text/Css">
+ul{
+  list-style-type:none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
 }
+li{float:right;
 
-#wrapper {
-	
 }
+a:link,a:visited{
+  display:block;
+  font-weight: bold;
+  color:#FFFFFF;
+  background-color:#98bf21;
+  width:320px;
+  text-align: center;
+  padding:4px;
+  text-transform: uppercase;
 
-#nav {
-	background:red;
-	text-align:left;
-	color:red;
-	height:40px;
 }
+ .round {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 320px;
+                height: 320px;
+                float:center;
+                margin-left:500px;
+                margin-top:30px;
+            }
+            .round img {
+                display: block;
+            /* Stretch 
+                  height: 100%;
+                  width: 100%; */
+            min-width: 100%;
+            min-height: 100%;
+            float:center;
+            margin-left:-5%;
+            }
+            p{
+              margin-left:400px;
+              margin-top:200px;
+              color:red;
+              font-size:20px;
 
-#header {color:red;
-	font-size:18px;
-	margin-right: 0px;
-}
 
-#bg {
-	height:36px;
-    background:url('http://img840.imageshack.us/img840/9886/87926428.gif') repeat-x;
-}
-
-#main-content {
-	
-}
-
-#main-image {
-	
-}
-
-#left-column {
-	
-}
-
-#right-column {
-	
-}
-
-.sidebar {
-    background:url('http://img404.imageshack.us/img404/3092/.jpg') no-repeat top;
-	
-}
-
-#footer {
-	
-}
-
-/* Global Styling */
-
-a:visited, a:link {
-	color:#a43b55;
-	text-decoration:underline;
-	background:none;
-}
-
-a:hover {
-	color:#a43b55;
-	text-decoration:none;
-	background:none;
-}
-
-h1 {
-	color:#7a2e40;
-	margin:0 0 10px;
-	padding-bottom:10px;
-	font:normal 17px Georgia, serif;
-	border-bottom:1px solid #efece7;
-}
-
-h2 {
-	color:#7a2e40;
-	margin:20px 0 10px;
-	padding-bottom:10px;
-	font:normal 17px Georgia, serif;
-	border-bottom:1px solid #efece7;
-}
-
-h3 {
-	color:#7a2e40;
-	margin:10px 0;
-	padding-bottom:10px;
-	font:bold 14px Arial, Helvetica, sans-serif;
-	border-bottom:1px solid #efece7;
-}
-
-ul {
-	padding:0;
-	margin:0 0 0 17px;
-    list-style:square url('http://img525.imageshack.us/img525/1890/bulletr.gif');
-}
-
-.box {
-	background:#f7f7f7;
-	border:1px solid #f0e9eb;
-	padding:15px;
-}
-
-#nav a {
-	margin: 0 10px;
-}
-
-#nav a:visited, #nav a:link {
-	text-decoration:none;
-	color:#f6dde3;
-}
-
-#nav a:hover {
-	text-decoration:underline;
-	color:#f6dde3;
-}
-
-#logo {
-	margin-bottom:20px;
-	font:normal 18px Georgia, serif;
-	color:#fa7393;
-}
+            }
+            body{
+              background-repeat: no-repeat;
+              background-size:cover;
+            }
 </style>
-<div id="wrapper">
-    
-    <div id="header">
-		<div id="nav"><a href="index.html">Home</a> | <a href="#">About Me</a> | <a href="#">Contact Me</a> | <a href="#">My Photos</a> | <a href="#">My Videos</a></div>
-		<div id="bg"></div>
-	</div>
-	
-	<div id="main-content">
-		<div id="left-column">
-			<div id="logo">
-			Welcome to Aminhimat Web Page
-			</div>
-			<div class="box">
-        		<h1>I am Front-End Web &DataBase Devolper</h1>
-        		<p>Skill</p>
-				<ul style="margin-top:10px;">
-					<li>Mirco Soft Office</li>
-					<li>JavaScript</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>SQL Server</li>
-					<li>VB 6.0</li>
-					<li>Photshop</li>
-					
+</head>
 
-				</ul>
-			
-		
-				<h3>Blurb About Me</h3>
-				<p>My name is Amin himat</p>
-				<h3>Find Me Elsewhere</h3>
-				<div class="box">
-					<ul>
-						<li><a href="http://facebook.com" target="_blank">Facebook</a></li>
-						<li><a href="http://twitter.com" target="_blank">Twitter</a></li>
-						<li><a href="http://linkedin.com" target="_blank">LinkedIn</a></li>
-						<li><a href="http://tumblr.com" target="_blank">Tumblr</a></li>
-						<li><a href="http://pinterest.com" target="_blank">Pinterest </a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		<br/>
-		Layout adapted from <a href="http://www.web-designers-directory.org/" target="_blank">Web Designers' Directory</a>.
-	</div>
-</div>
+<body background="noor.png">
+
+<ul>
+<li> <a href="#Home">Home</a></li>
+<li> <a href="#Portfolio">Portfolio</a></li>
+<li> <a href="#About me">About me</a></li>
+<li> <a href="#Contact">Contact</a></li>
+</ul>
+<p> Hello, my name is Amin himat Full Stack Web and Database Developer</p>
+ <div class="round">
+            <img src="Khan.jpg" />
+        </div>
 
 </body>
 </html>
