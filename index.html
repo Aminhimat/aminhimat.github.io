@@ -35,7 +35,10 @@ p{
   margin-top:-70px;
   font-size:30px;
   text-align: center;
-  font-family: Georgia;}
+  font-family: Georgia;
+}
+
+  
 
 body{
   background-repeat: no-repeat;
@@ -107,9 +110,15 @@ img{
   margin-top:200px;
   border: double;
   border-color: #f44242;
+  position: relative;
+  animation:sampleAnimation 5s infinite alternate;)
 }
 
-
+@keyframes sampleAnimation{
+  /*animation*/
+  from{border-radius: 0;}
+  to{border-radius: 50%}
+}
 
 
 </style>
@@ -120,9 +129,9 @@ img{
 
 
 <ul>
-  <li><a class="active" href="">Home</a></li>
+ 
   <li><a href="Amin resume v4.pdf">Portfolio</a></li>
-  <li><a href="asad.html">Contact me</a></li>
+  <li><a href="asad.html">Contact</a></li>
   <li><a href="noor.html">About me</a></li>
 </ul>
 
