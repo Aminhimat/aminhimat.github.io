@@ -1,72 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Aminhimat </title>
-<meta name="keywords" content="HTML, Meta Tags, Metadata" />
-<meta name="description" content="Learning about Meta Tags." />
+
+<ul>
+  <li><a href="#home">Portofoilo</a></li>
+  <li><a href="noor.html">About</a></li>
+  <li><a href="mailto:aminhimat24@yahoo.com">Contact</a></li>
+<li> <a href="Amin Resume.pdf">Resume</a></li>
+
+</ul>
 <meta name="revised" content="Tutorialspoint, 3/7/2014" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
 
-<style type="text/Css">
+
+
+	<style>
+
+    .kamal{
+        margin-top: 90px;
+        color: black;
+background-color: black;
+height: 5px
+
+    }
+
+
+hr {
+color: black;
+background-color: black;
+height: 5px}
+
+    body{
+        background-repeat: no-repeat;
+       background-size: cover;
+    }
+	.noor{
+		width: 400px;
+		height: 500px;
+		background:rgba(0, 0, 0, 0.4);
+		margin-left: 600px;
+       
+        
+        margin-top:50px;
+        
+		
+		border-radius:3%;
+
+	}	
+
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f44242;
+    background-color:
+
 }
 
-.noor{
-  color:#f44242;
-  margin-top: -20px;
-  font-size:80px;
-  text-align: center;
-  font-family: Arial Black;
-  animation: forwards;
-}
-
-.asad{
-  color:#f44242;
-  margin-top:-70px;
-  font-size:80px;
-  text-align: center;
-  font-family: Georgia;
-}
-
-p{
-  color:#9F90D4;
-  margin-top:-70px;
-  font-size:30px;
-  text-align: center;
-  font-family: Georgia;
-}
-
-  
-
-body{
-  background-repeat: no-repeat;
-  background-size: cover
-}
 li {
     float: left;
+    
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 25px;
+    font-family: Georgia;
 }
+
+
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
+li a:hover:not(.active) {
     background-color: #111;
+}
 
+img{
+    width:100px;
+    height:100px;
+    margin-top: 10px;
+    margin-left: 150px;
+    border-radius:30px;
+      animation:sampleAnimation 5s infinite alternate;)
+}
+
+@keyframes sampleAnimation{
+  /*animation*/
+  from{border-radius: 0;}
+  to{border-radius: 50%}
+}
+}
+
+.active {
+    background-color: #4CAF50;}
+.zala{
+    color:white;
+margin-left:150px;
+font-size: 50px;
+margin-top:10px;
+}
+
+.aria{
+    color:white;
+    margin-left:120px;
+    font-size: 40px;
+    margin-top:-80px;
 }
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
   width: 30px;
   text-align: center;
   text-decoration: none;
@@ -82,12 +132,22 @@ li a:hover {
   background: #3B5998;
   color: white;
   margin-left:200px;
+  margin-top: -50px;
+  width:8px;
+  height:8px;
+  margin-left: 30px;
+  margin-top:140px;
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
   margin-left:200px;
+  width:8px;
+  height:8px;;
+  float: left;
+  margin-left: 120px;
+  margin-top:140px;
 }
 
 .fa-yahoo {
@@ -100,60 +160,45 @@ li a:hover {
   background: #0080ff;
   color: white;
   margin-left: 200px;
-  margin-top:80%;
-}
-.ali{
-  width:60px;
-}
-
-img{
-  border-radius: 120px;
-  width:200px;
-  height:200px;
-  margin-left:570px;
-  margin-top:200px;
-  border: double;
-  border-color: #f44242;
-  position: relative;
+ width:8px;
+  height:8px;
+  float: left;
+  margin-left: 30px;
+  margin-top:140px;
+  text-align: center;
   
-  animation:sampleAnimation 5s infinite alternate;)
 }
 
-@keyframes sampleAnimation{
-  /*animation*/
-  from{border-radius: 0;}
-  to{border-radius: 50%}
+.ahmad{
+  margin-left:14px;
+  font-size: 19px;
+  margin-top: -30px;
+  color:white;
 }
 
+	</style>
 
-</style>
 </head>
+<body background="soo.jpg">
 
-<body background="noor.png">
+<div class= "noor">
 
 
 
-<ul>
- 
-  <li><a href="Amin resume v4.pdf">Portfolio</a></li>
- 
-<li><a href="mailto:aminhimat24@yahoo.com?subject=Feedback&body=Message">
-Contact
-</a></li>
-
-  <li><a href="noor.html">About me</a></li>
-</ul>
-
-<img src="himat.jpg">
- 
-<p class="noor"> Hello</p>
-<p class="asad"> I'M AMIN </p>
-<p> Front-End-Web Developer& DataBase Developer</p>
-
+<img src="khan.jpg">
+<p class="zala">Hello!</p>
+<br> </br>
+<p class="aria"> I'M AMIN</p>
+<p class="ahmad">Front-End-Web Developer& DataBase Developer</p>
 <a href="https://www.facebook.com/amin.himat" class="fa fa-facebook"></a>
 <a href="https://twitter.com/amin_himat" class="fa fa-twitter"></a>
 
 <a href="https://www.linkedin.com/in/amin-himat-0a5400106/" class="fa fa-linkedin"></a>
- 
+
+
+</div>
+
+
+
 </body>
 </html>
