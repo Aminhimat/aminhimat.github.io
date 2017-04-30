@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<html dir="rtl" lang="ps"  xml:lang="ps">
 
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div>
 <ul>
   <li><a href="#home">Portofoilo</a></li>
   <li><a href="noor.html">About</a></li>
@@ -9,6 +14,75 @@
 <li> <a href="Amin Resume.pdf">Resume</a></li>
 
 </ul>
+</div>
+<script type="text/javascript">
+  var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+    greeting = 'Good Evening!';
+}
+else if (hourNow > 12) {
+    greeting = 'Good afternoon!';
+}
+else if (hourNow > 0) {
+    greeting = '!Good morning';
+}
+else {
+    greeting = 'Welcome!';
+}
+
+document.write('<h3>' + greeting + '</h3>');
+
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+    greeting = 'ماښام پخیر!';
+}
+else if (hourNow > 12) {
+    greeting = 'غرمه پخیر!';
+}
+else if (hourNow > 0) {
+    greeting = 'سهار پخیر!';
+}
+else {
+    greeting = 'ښه راغلاست!';
+}
+
+document.write('<h3>' + greeting + '</h3>');
+
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+    greeting = 'شام پخیر!';
+}
+else if (hourNow > 12) {
+    greeting = 'چاشت بخیر!';
+}
+else if (hourNow > 0) {
+    greeting = 'صبح بخیر!';
+}
+else {
+    greeting = 'خوش امدید!';
+}
+
+document.write('<h3>' + greeting + '</h3>');
+
+</script>
+
+
+
+ 
+<title>Aminhimat </title>
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes"/>
+<meta name="keywords" content="HTML, Meta Tags, Metadata" />
+<meta name="description" content="Learning about Meta Tags." />
+
 <meta name="revised" content="Tutorialspoint, 3/7/2014" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,7 +114,8 @@ height: 5px}
 		width: 400px;
 		height: 500px;
 		background:rgba(0, 0, 0, 0.4);
-		margin-left: 600px;
+		margin-left:200px;
+    margin-right: 450px;
        
         
         margin-top:50px;
@@ -48,17 +123,37 @@ height: 5px}
 		
 		border-radius:3%;
 
+
 	}	
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
-
+h3{
+  margin-right: 600px;
+  color:red;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color:
-
+   
+    
 }
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
 
 li {
     float: left;
@@ -67,8 +162,15 @@ li {
     margin-left: 200px;
     font-size: 25px;
     font-family: Georgia;
+    position:
 }
-
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
 
 li a {
@@ -83,12 +185,18 @@ li a:hover:not(.active) {
     background-color: #111;
 }
 
+
+
 img{
-    width:100px;
-    height:100px;
+    width:70px;
+    height:70px;
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 30px;
     border-radius:30px;
+    border:double;
+    border-bottom: none;
+    margin-right: 150px;
+    
       animation:sampleAnimation 5s infinite alternate;)
 }
 
@@ -106,6 +214,7 @@ img{
 margin-left:150px;
 font-size: 50px;
 margin-top:10px;
+margin-right: 140px;
 }
 
 .aria{
@@ -113,6 +222,7 @@ margin-top:10px;
     margin-left:120px;
     font-size: 40px;
     margin-top:-80px;
+    margin-right: 100px;
 }
 .fa {
   padding: 20px;
@@ -122,6 +232,7 @@ margin-top:10px;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
 .fa:hover {
@@ -170,10 +281,11 @@ margin-top:10px;
 }
 
 .ahmad{
-  margin-left:14px;
-  font-size: 19px;
+  margin-left:-20px;
+  font-size: 17px;
   margin-top: -30px;
   color:white;
+  margin-right: 40px;
 }
 
 	</style>
