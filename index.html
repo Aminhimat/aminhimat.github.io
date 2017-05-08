@@ -23,6 +23,7 @@
   <li><a href="noor.html">About</a></li>
   <li><a href="mailto:aminhimat24@yahoo.com">Contact</a></li>
 <li> <a href="Amin Resume.pdf">Resume</a></li>
+<li> <a href="Skills.html">Skills</a></li>
 
 </ul>
 </div>
@@ -32,10 +33,10 @@ var hourNow = today.getHours();
 var greeting;
 
 if (hourNow > 18) {
-    greeting = 'Good Evening!';
+    greeting = '!Good Evening';
 }
 else if (hourNow > 12) {
-    greeting = 'Good afternoon!';
+    greeting = '!Good afternoon';
 }
 else if (hourNow > 0) {
     greeting = '!Good morning';
@@ -46,43 +47,7 @@ else {
 
 document.write('<h3>' + greeting + '</h3>');
 
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
 
-if (hourNow > 18) {
-    greeting = 'ماښام پخیر!';
-}
-else if (hourNow > 12) {
-    greeting = 'غرمه پخیر!';
-}
-else if (hourNow > 0) {
-    greeting = 'سهار پخیر!';
-}
-else {
-    greeting = 'ښه راغلاست!';
-}
-
-document.write('<h3>' + greeting + '</h3>');
-
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
-
-if (hourNow > 18) {
-    greeting = 'شام بخیر!';
-}
-else if (hourNow > 12) {
-    greeting = 'چاشت بخیر!';
-}
-else if (hourNow > 0) {
-    greeting = 'صبح بخیر!';
-}
-else {
-    greeting = 'خوش امدید!';
-}
-
-document.write('<h3>' + greeting + '</h3>');
 
 </script>
 
@@ -172,7 +137,7 @@ li {
     margin-top: 20px;
     margin-left: 200px;
     font-size: 25px;
-    font-family: Georgia;
+    font-family: sans-serif;
     position:
 }
 @media screen and (max-width: 600px) {
@@ -236,14 +201,15 @@ margin-right: 140px;
     margin-right: 100px;
 }
 .fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 30px;
+  padding: 30px;
+  font-size: 16px;
+  width: 10px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
   margin-right: 20px;
+  margin-top:100px;
 }
 
 .fa:hover {
@@ -254,22 +220,22 @@ margin-right: 140px;
   background: #3B5998;
   color: white;
   margin-left:200px;
-  margin-top: -50px;
+  margin-top: -60px;
   width:8px;
   height:8px;
   margin-left: 30px;
-  margin-top:140px;
+  margin-top:20px;
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
-  margin-left:200px;
-  width:8px;
-  height:8px;;
+  margin-left:260px;
+  width:6px;
+  height:6px;;
   float: left;
-  margin-left: 120px;
-  margin-top:140px;
+  margin-left: 190px;
+  margin-top:20px;
 }
 
 .fa-yahoo {
@@ -281,13 +247,13 @@ margin-right: 140px;
 .fa-linkedin {
   background: #0080ff;
   color: white;
-  margin-left: 200px;
+  margin-left: 600px;
  width:8px;
   height:8px;
   float: left;
-  margin-left: 30px;
-  margin-top:140px;
-  text-align: center;
+  margin-left: 60px;
+  margin-top:-65px;
+  text-align: right;
   
 }
 
@@ -299,7 +265,14 @@ margin-right: 140px;
   margin-right: 30px;
 }
 
+.sami{
+  color:Orange;
+  margin-right:80px;
+  margin-top: 90px;
+  font-size: 30px;
+
 	</style>
+}
 
 </head>
 <body background="soo.jpg">
@@ -313,6 +286,10 @@ margin-right: 140px;
 <br> </br>
 <p class="aria"> I'M AMIN</p>
 <p class="ahmad">Front-End-Web Developer& DataBase Developer</p>
+
+
+
+<p class="sami"> FOLLOW ME ON SOCIAL MEDIA</p>
 <a href="https://www.facebook.com/amin.himat" class="fa fa-facebook"></a>
 <a href="https://twitter.com/amin_himat" class="fa fa-twitter"></a>
 
