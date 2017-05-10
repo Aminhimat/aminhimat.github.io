@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  >
-<html dir="rtl" lang="ps"  xml:lang="ps">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -14,42 +14,9 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<head>
-
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<div>
-<ul>
-  <li><a href="#home">Portofoilo</a></li>
-  <li><a href="noor.html">About</a></li>
-  <li><a href="mailto:aminhimat24@yahoo.com">Contact</a></li>
-<li> <a href="Amin ResumeV4.pdf">Resume</a></li>
-<li> <a href="skills.html">Skills</a></li>
-
-</ul>
-</div>
-<script type="text/javascript">
-  var today = new Date();
-var hourNow = today.getHours();
-var greeting;
-
-if (hourNow > 18) {
-    greeting = '!Good Evening';
-}
-else if (hourNow > 12) {
-    greeting = '!Good afternoon';
-}
-else if (hourNow > 0) {
-    greeting = '!Good morning';
-}
-else {
-    greeting = 'Welcome!';
-}
-
-document.write('<h3>' + greeting + '</h3>');
 
 
 
-</script>
 
 
 
@@ -62,7 +29,6 @@ document.write('<h3>' + greeting + '</h3>');
 <meta name="revised" content="Tutorialspoint, 3/7/2014" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title></title>
 
 
 
@@ -71,11 +37,47 @@ document.write('<h3>' + greeting + '</h3>');
     .kamal{
         margin-top: 90px;
         color: black;
-background-color: black;
-height: 5px
-
+        background-color: black;
+        height: 5px
     }
 
+
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(56, 0, 44, 1);
+    margin-left: 0;
+    font-size:;
+
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 80px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left:40px;
+
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
 
 hr {
 color: black;
@@ -90,8 +92,8 @@ height: 5px}
 		width: 400px;
 		height: 500px;
 		background:rgba(0, 0, 0, 0.4);
-		margin-left:200px;
-    margin-right: 450px;
+		margin-left:auto;
+    margin-right:auto;
        
         
         margin-top:50px;
@@ -109,69 +111,23 @@ height: 5px}
   }
 }
 
-h3{
-  margin-right: 600px;
-  color:red;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:
-   
-    
-}
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
 
 
-li {
-    float: left;
-    
-    margin-top: 20px;
-    margin-left: 200px;
-    font-size: 25px;
-    font-family: sans-serif;
-    position:
-}
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
 
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
 
 
 
 img{
-    width:70px;
-    height:70px;
+    width:120px;
+    height:100px;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left:150px;
     border-radius:30px;
-    border:double;
+    border:solid;
     border-bottom: none;
-    margin-right: 150px;
+    margin-right: 50px;
+    border-color:#11442e;
+    border-width:10px;
     
       animation:sampleAnimation 5s infinite alternate;)
 }
@@ -203,11 +159,11 @@ margin-right: 140px;
 .fa {
   padding: 30px;
   font-size: 16px;
-  width: 10px;
+  width: 3px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+  margin: 7px 5px;
+  border-radius: 100%;
   margin-right: 20px;
   margin-top:100px;
 }
@@ -221,10 +177,14 @@ margin-right: 140px;
   color: white;
   margin-left:200px;
   margin-top: -60px;
-  width:8px;
-  height:8px;
+  width:4px;
+  height:4px;
   margin-left: 30px;
   margin-top:20px;
+}
+h3{
+  margin-left:600px;
+  color:red;
 }
 
 .fa-twitter {
@@ -236,6 +196,7 @@ margin-right: 140px;
   float: left;
   margin-left: 190px;
   margin-top:20px;
+  padding-top:
 }
 
 .fa-yahoo {
@@ -253,30 +214,45 @@ margin-right: 140px;
   float: left;
   margin-left: 60px;
   margin-top:-65px;
-  text-align: right;
+  text-align:left;
   
 }
 
 .ahmad{
-  margin-left:-130px;
+  margin-left:-200px;
   font-size: 17px;
   margin-top: -10px;
   color:white;
   margin-right: 30px;
+  padding-left:205px;
+  text-align: center;
 }
 
 .sami{
   color:Orange;
-  margin-right:80px;
-  margin-top: 90px;
-  font-size: 30px;
+  margin-right:50px;
+  margin-top: 60px;
+  font-size: 20px;
+  margin-left: 50px;
+  padding-left: 2px;}
 
 	</style>
-}
+
 
 </head>
 <body background="soo.jpg">
 
+<ul class="topnav">
+  <li><a href="Co.html">Contact</a></li>
+  <li><a href="Resume.html">Resume</a></li>
+  <li><a href="Skills.html">Skills</a></li>
+  <li><a href="">Portofolio</a></li>
+  <li><a href="index.html">Home</a></li>
+
+  
+</ul>
+
+<h3 id="welcomeText"></h3>
 <div class= "noor">
 
 
@@ -297,7 +273,28 @@ margin-right: 140px;
 
 
 </div>
+<script type="text/javascript">
+  var today = new Date();
+var hourNow = today.getHours();
+var greeting;
 
+if (hourNow > 18) {
+    greeting = 'Good Evening!';
+}
+else if (hourNow > 12) {
+    greeting = 'Good afternoon!';
+}
+else if (hourNow > 0) {
+    greeting = 'Good morning!';
+}
+else {
+    greeting = 'Welcome!';
+}
+
+document.getElementById("welcomeText").innerHTML = greeting;
+
+
+</script>
 
 
 </body>
