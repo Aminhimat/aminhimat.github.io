@@ -50,7 +50,10 @@ ul.topnav {
 
 }
 
-ul.topnav li {float: right;}
+ul.topnav li {float: right;
+  padding:1px;
+
+}
 
 ul.topnav li a {
     display: block;
@@ -60,6 +63,7 @@ ul.topnav li a {
     text-decoration: none;
     font-size: 20px;
     margin-left:40px;
+    font-family: Comic Sans MS;
 
 }
 
@@ -155,8 +159,15 @@ margin-right: 140px;
 h3{
   margin-left:600px;
   color:red;
-}
 
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
 
 .ahmad{
@@ -228,7 +239,7 @@ h3{
   <li><a href="Contact.html">Contact</a></li>
   <li><a href="CV.html">Resume</a></li>
   <li><a href="skills.html">Skills</a></li>
-  <li><a href="Portofolio.html">Portofolio</a></li>
+  <li><a href="Portofolio.html">Portfolio</a></li>
   <li><a href="index.html">Home</a></li>
 
   
