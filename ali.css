@@ -8,7 +8,8 @@
 /* //-- yui-grids style overrides -- */
 body { font-family: Georgia; color: #444; }
 #inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
-.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; 
+}
 
 /* //-- header, body, footer -- */
 #hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
@@ -27,6 +28,11 @@ h1, h2, h3, h4 { color: #333; }
 
 .ali{
 	color:green;
+}
+
+body{
+    background-repeat: no-repeat;
+       background-size: cover;
 }
 
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
@@ -71,7 +77,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:rgba(56, 0, 44, 1);
+    background-color:rgba(0, 0, 0, 0.4);
     margin-left: 0;
     font-size:;
 
