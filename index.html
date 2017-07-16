@@ -47,6 +47,7 @@ ul.topnav {
     background-color:rgba(0, 0, 0, 0.4);
     margin-left: 0;
     font-size:;
+    position:relative;
 
 }
 
@@ -64,7 +65,7 @@ ul.topnav li a {
     font-size: 20px;
     margin-left:80px;
     font-family: Comic Sans MS;
-
+    position:relative;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -160,14 +161,28 @@ h3{
  
   color:red;
   text-align: center;
+animation:h3Slider 5s infinite alternate;)
+
 
 }
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+@-webkit-keyframes h3Slider {
+    from {
+        margin: 0 0 0 -35%;
+    }
+    to {
+        margin: 0;
+    }
+}
+
+
+@-moz-keyframes h5Slider {
+
+    from {
+        margin: 0 0 0 -35%;
+    }
+    to {
+        margin: 0;
+    }
 }
 
 
@@ -251,7 +266,7 @@ h3{
 
 
 
-<img src="khan.jpg" alt="" class="img-responsive"/>
+<img src="linked.jpg" alt="" class="img-responsive"/>
 <p class="zala">Hello!</p>
 <br> </br>
 <p class="aria"> I'M AMIN</p>
