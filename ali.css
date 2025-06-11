@@ -1,14 +1,16 @@
+/* Original ali.css content - with necessary modifications */
 
-
+/* .msg styles removed as unused
 .msg { padding: 10px; background: #222; position: relative; }
 .msg h1 { color: green;  }
 .msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
 .msg a:hover { background: #266400; }
+*/
 
 /* //-- yui-grids style overrides -- */
-body { font-family: Georgia; color: #444; }
+/* body { font-family: Georgia; color: #444; } -- Rule moved to end and merged (already commented) */
 #inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
-.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; 
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc;
 }
 
 /* //-- header, body, footer -- */
@@ -23,23 +25,23 @@ body { font-family: Georgia; color: #444; }
 /* //-- core typography and style -- */
 #hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
 h2 { font-size: 152% }
-h3, h4 { font-size: 122%; }
+h3, h4 { font-size: 122%; } /* Note: h3 styling for #welcomeText is at the end */
 h1, h2, h3, h4 { color: #333; }
 
 .ali{
 	color:green;
 }
 
-body{
+/* body{
     background-repeat: no-repeat;
        background-size: cover;
-}
+} -- Rule moved to end and merged */
 
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
-a { color: #990003 }
+a { color: #990003 } /* General link color, specific links like topnav override this */
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
-li { line-height: 24px; border-bottom: 1px solid #ccc; }
+li { line-height: 24px; border-bottom: 1px solid #ccc; } /* General li, topnav overrides this */
 p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
 p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; }
@@ -64,14 +66,41 @@ a#pdf:hover { background: #222; }
 .talent { width: 32%; float: left }
 .talent h2 { margin-bottom: 6px; }
 
+/* #srt-ttab styles removed as unused
 #srt-ttab { margin-bottom: 100px; text-align: center;  }
 #srt-ttab img.last { margin-top: 20px }
+*/
 
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
-body {margin: 0;}
+/* body {margin: 0;} -- Rule moved to end and merged */
 
+/*
+   The original ul.topnav rules are removed from here.
+   The new rules are at the end of the file.
+*/
+
+/* Styles moved and merged from index.html */
+
+/* General body styles from index.html and ali.css */
+body {
+    font-family: Georgia; /* Original from ali.css */
+    color: #444; /* Original from ali.css */
+    margin: 0; /* From index.html */
+    background-image: url("ami.jpg"); /* From index.html body attribute */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kamal{
+    margin-top: 90px;
+    color: black;
+    background-color: black;
+    height: 5px
+}
+
+/* Topnav styles from index.html */
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -79,33 +108,178 @@ ul.topnav {
     overflow: hidden;
     background-color:rgba(0, 0, 0, 0.4);
     margin-left: 0;
-    font-size:;
-
+    position:relative;
 }
 
-ul.topnav li {float: right;}
+ul.topnav li {
+    float: right;
+    padding:1px;
+}
 
 ul.topnav li a {
     display: block;
     color: white;
     text-align: left;
-    padding: 14px 80px;
+    padding: 10px 60px;
     text-decoration: none;
     font-size: 20px;
-    margin-left:40px;
+    margin-left:80px;
     font-family: Comic Sans MS;
-
+    position:relative;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
 
-ul.topnav li a.active {background-color: #4CAF50;}
+ul.topnav li a.active {
+    background-color: #4CAF50;
+}
 
-ul.topnav li.right {float: right;}
+ul.topnav li.right {
+    float: right;
+}
 
+/* Media query for topnav from index.html (includes hamburger menu icon styles) */
 @media screen and (max-width: 600px){
-    ul.topnav li.right, 
+    ul.topnav li.right,
     ul.topnav li {float: none;}
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
 }
 
+hr {
+    color: black;
+    background-color: black;
+    height: 5px
+}
 
+.noor{
+	width: 400px;
+	height: 500px;
+	background:rgba(0, 0, 0, 0.4);
+	margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+	border-radius:3%;
+}
+
+/* Styles for the image, formerly img.img-responsive, now img.img-fluid for Bootstrap 5 */
+img.img-fluid { /* Selector updated from .img-responsive */
+    width:120px; /* Custom width; BS5 img-fluid handles responsiveness if width/height not set or set to auto */
+    height:100px; /* Custom height */
+    margin-top: 10px;
+    margin-left:150px;
+    border-radius:30px;
+    border:solid;
+    border-bottom: none;
+    margin-right: 50px;
+    border-color:black;
+    border-width:10px;
+    animation:sampleAnimation 5s infinite alternate;
+}
+
+@keyframes sampleAnimation{
+  from{border-radius: 0;}
+  to{border-radius: 50%;}
+}
+
+.zala{
+    color:white;
+    margin-left:150px;
+    font-size: 50px;
+    margin-top:10px;
+    margin-right: 140px;
+}
+
+.aria{
+    color:white;
+    margin-left:120px;
+    font-size: 40px;
+    margin-top:-60px;
+    margin-right: 100px;
+}
+
+h3#welcomeText{
+  color:red;
+  text-align: center;
+  animation:h3Slider 5s infinite alternate;
+}
+
+@-webkit-keyframes h3Slider {
+    from {
+        margin: 0 0 0 -35%;
+    }
+    to {
+        margin: 0;
+    }
+}
+
+@-moz-keyframes h5Slider {
+    from {
+        margin: 0 0 0 -35%;
+    }
+    to {
+        margin: 0;
+    }
+}
+
+.ahmad{
+  margin-left:-200px;
+  font-size: 17px;
+  margin-top: -10px;
+  color:white;
+  margin-right: 30px;
+  padding-left:205px;
+  text-align: center;
+}
+
+.sami{
+  color:Orange;
+  margin-right:50px;
+  margin-top: 60px;
+  font-size: 20px;
+  margin-left: 50px;
+  padding-left: 2px;
+}
+
+.fa {
+  padding: 30px;
+  font-size: 20px;
+  height: 6px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+  border-radius: 40%;
+  margin-left: 60px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  border:double;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+/* End of appended styles from index.html */

@@ -1,23 +1,15 @@
 
 
-<html>
+<html lang="en">
   <head>
+   <meta charset="UTF-8">
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="ali.css"> <!-- Added link to ali.css -->
     <title>Professional Resume</title>
-    <ul class="topnav">
-  <li><a href="Contact.html">Contact</a></li>
-  <li><a href="CV.html">Resume</a></li>
-  <li><a href="skills.html">Skills</a></li>
-  <li><a href="Portofolio.html">Portfolio</a></li>
-  <li><a href="index.html">Home</a></li>
-
-  
-</ul>
+    <!-- Removed ul.topnav from head -->
     <style>
-
-
-    ul.topnav {
+    /* Removed ul.topnav rules from here as they are in ali.css */
+    /* ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -50,9 +42,10 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
-}
+} */ /* End of commented out topnav rules */
 
    
+      /* html rule removed as background is handled by body in ali.css
       html{
         background-color: ;
         padding: 0 1em;
@@ -60,8 +53,9 @@ ul.topnav li.right {float: right;}
         background-repeat: no-repeat;
         background-size: cover;
       }
+      */
       body {
-        background-color: #FFF;
+        /* background-color: #FFF; Styles from ali.css will apply for background */
         font-family: 'Lato', sans-serif;
         margin: 1em auto;
         max-width: 50em;
@@ -174,12 +168,21 @@ ul.topnav li.right {float: right;}
     </style>
   </head>
   <body>
-
-  
+    <header>
+      <nav>
+        <ul class="topnav">
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="CV.html">Resume</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="Portofolio.html">Portfolio</a></li>
+      <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <div id="section-left">
       <div class="section intro">
-        <img src="Re.jpg">
+        <img src="Re.jpg" alt="Amin Himat - Profile Picture">
         <h1>Amin Himat</h1>
         <div class="content">
           <span class="Adress">Madison,Wisconsin</span> <br>
