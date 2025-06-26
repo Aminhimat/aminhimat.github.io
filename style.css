@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-bg-color: #222831; /* Dark grayish blue */
+    --secondary-bg-color: #393E46; /* Medium dark gray */
+    --accent-color: #00ADB5; /* Teal/cyan accent */
+    --text-color-light: #EEEEEE; /* Light gray for text */
+    --text-color-dark: #222831; /* For contrast on light backgrounds if any */
+    --font-primary: 'Roboto', sans-serif;
+    --font-headings: 'Montserrat', sans-serif;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: var(--font-primary);
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-light);
+    font-size: 16px; /* Updated base font size */
+    line-height: 1.6; /* Adjusted line height */
+    background-image: none; /* Removing the old background image for a solid color look */
+    /* background-image: url('ami.jpg'); */ /* Kept if user wants to revert */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    padding-top: 70px; /* Add padding to prevent content from being hidden by fixed navbar */
+}
+
+/* General link styling */
+a, a:visited, a:link {
+    color: var(--accent-color);
+    text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+    color: var(--text-color-light);
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+/* Strong tag styling */
+strong {
+    font-weight: 700; /* Bolder */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+    color: var(--text-color-light);
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    font-weight: 600;
+}
+
+h1 { font-size: 2.8em; letter-spacing: 1px; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; } /* Used by #welcomeText */
+h4 { font-size: 1.5em; }
+
+/* Paragraph styling */
+p {
+    line-height: 1.7; /* Slightly more spacious */
+    margin-bottom: 1em;
+    padding-right: 0; /* Removed default padding-right */
+    color: var(--text-color-light);
+}
+
+/* Navigation styles */
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px; /* Add some horizontal padding to the nav bar */
+    overflow: hidden;
+    background-color: var(--secondary-bg-color);
+    position: fixed; /* Make navbar fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.topnav li {
+    float: right;
+}
+
+.topnav li a {
+    display: block;
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 20px 25px; /* Increased padding for better touch targets */
+    text-decoration: none;
+    font-size: 1em; /* Relative to body font size */
+    font-family: var(--font-headings);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topnav li a:hover:not(.active) {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+}
+
+.topnav li a.active {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    width: 90%;
+    max-width: 600px; /* Slightly wider */
+    margin: 70px auto 30px; /* Adjusted margin for fixed navbar */
+    padding: 30px; /* Increased padding */
+    background: var(--secondary-bg-color);
+    border-radius: 10px; /* Slightly more rounded */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.hero img {
+    width: 150px; /* Larger image */
+    height: 150px;
+    margin: 0 auto 25px; /* Adjusted margin */
+    border-radius: 50%;
+    border: 5px solid var(--accent-color); /* Accent color border */
+    animation: none; /* Removing old animation, can be replaced with subtle hover effect if desired */
+}
+
+/* Optional: Add a subtle hover effect for the image */
+.hero img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.hero .greeting {
+    color: var(--text-color-light);
+    font-size: 1.8em; /* Relative font size */
+    margin-bottom: 5px;
+    font-family: var(--font-headings);
+}
+
+.hero .name {
+    color: var(--accent-color); /* Accent color for name */
+    font-size: 2.5em; /* Relative font size */
+    margin-bottom: 10px;
+    font-family: var(--font-headings);
+    font-weight: 700;
+}
+
+.hero .title {
+    color: var(--text-color-light);
+    font-size: 1.2em; /* Relative font size */
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.hero .social-prompt {
+    color: var(--accent-color);
+    font-size: 1.1em; /* Relative font size */
+    margin-bottom: 15px;
+    font-family: var(--font-headings);
+}
+
+/* Social media icons */
+.social-icons { /* Added this wrapper in HTML previously */
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    font-size: 24px; /* Larger icons */
+    width: 50px;
+    height: 50px;
+    line-height: 50px; /* Vertically center Font Awesome icons */
+    text-align: center;
+    text-decoration: none;
+    margin: 0 8px;
+    border-radius: 50%;
+    color: var(--text-color-light);
+    background-color: var(--primary-bg-color); /* Use primary bg for icon background */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px) scale(1.1); /* Slight lift and scale effect */
+    color: var(--text-color-light); /* Keep text color light on hover */
+    /* Specific hover colors for each icon can be added if desired */
+}
+
+/* Removed .fa-facebook, .fa-twitter, .fa-linkedin specific background colors here */
+/* as they are now using the FontAwesome CDN classes and will inherit color from .social-icons a */
+/* If specific brand colors are desired on hover, they can be re-added: */
+/*
+.social-icons a.fa-facebook:hover { background: #3B5998; }
+.social-icons a.fa-twitter:hover { background: #55ACEE; }
+.social-icons a.fa-linkedin:hover { background: #007bb5; }
+*/
+
+/* Welcome text styling (previously h3#welcomeText) */
+#welcomeText {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 1.6em; /* Relative font size */
+    margin: 40px auto; /* Centered with more margin */
+    font-family: var(--font-headings);
+    animation: none; /* Removing old animation */
+    /* Optional: Add a subtle fade-in or new animation */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) { /* Adjusted breakpoint */
+    body {
+        padding-top: 0; /* Remove padding-top as nav will not be fixed or will be taller */
+    }
+
+    .topnav {
+        position: static; /* Or relative, if preferred for layout flow */
+        padding: 0;
+    }
+
+    .topnav li {
+        float: none;
+        width: 100%; /* Make nav items full width */
+        text-align: center;
+    }
+
+    .topnav li a {
+        padding: 15px; /* Adjust padding */
+        font-size: 1em;
+        border-bottom: 1px solid var(--primary-bg-color); /* Separator for stacked items */
+    }
+    .topnav li:last-child a {
+        border-bottom: none;
+    }
+
+    .hero {
+        margin-top: 30px;
+        width: 95%;
+    }
+
+    .hero .greeting { font-size: 1.6em; }
+    .hero .name { font-size: 2em; }
+    .hero .title { font-size: 1.1em; }
+    #welcomeText { font-size: 1.4em; margin: 30px auto; }
+}
+
+@media screen and (max-width: 480px) { /* Additional breakpoint for smaller mobile */
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.8em; }
+    h3 { font-size: 1.5em; }
+
+    .hero img {
+        width: 120px;
+        height: 120px;
+    }
+    .hero .greeting { font-size: 1.4em; }
+    .hero .name { font-size: 1.8em; }
+    .hero .title { font-size: 1em; }
+
+    .social-icons a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 20px;
+    }
+}
