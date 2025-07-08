@@ -128,21 +128,27 @@
         .profile-img {
             width: 200px;
             height: 200px;
-            border: 6px solid transparent;
-            background: linear-gradient(45deg, #667eea, #764ba2) border-box;
             border-radius: 50%;
             position: relative;
-        }
-        
-        .profile-img::before {
-            content: '';
-            position: absolute;
-            inset: 0;
             padding: 6px;
             background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .profile-img img {
+            width: calc(100% - 12px);
+            height: calc(100% - 12px);
             border-radius: 50%;
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            mask-composite: xor;
+            object-fit: cover;
+            display: block;
+            max-width: none;
         }
         
         .typing-animation {
@@ -253,7 +259,7 @@
     <section class="bg-gradient-to-br from-white to-gray-50 py-20 text-center card mx-4 mt-8 relative overflow-hidden">
         <div class="container mx-auto px-4 relative z-10">
             <div class="profile-img mx-auto mb-8">
-                <img src="ali.jpeg" alt="Amin Himat Profile" class="w-full h-full object-cover rounded-full">
+                <img src="./ali.jpeg" alt="Amin Himat Profile" loading="lazy">
             </div>
             <h2 class="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
                 <span class="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
